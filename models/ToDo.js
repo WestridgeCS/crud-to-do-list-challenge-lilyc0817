@@ -3,10 +3,12 @@ import mongoose from 'mongoose';
 const todoSchema = new mongoose.Schema(
   {
     text: {
-      // A1
+      type: String,
+      required: true
     },
     done: {
-      // A2
+      type: Boolean,
+      default: false
     }
   },
   { timestamps: true }
